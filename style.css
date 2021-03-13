@@ -1,0 +1,375 @@
+/* base style */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* end of base */
+
+/* ================header=============== */
+
+header{
+    background: url(images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    position: relative;
+   
+}
+
+.container{
+max-width: 1100px;
+margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.7em;
+
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    margin-top: .7em;
+    margin-right: 2em;
+}
+
+ul li a{
+    color: #fff;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+.headlogo{
+    color:#fff;
+    font-weight: 600;
+    
+}
+
+.hero-text{
+    position: relative;
+    border: 2px solid #fff;
+    top:220px;
+    left:150px;
+    width:30%;
+    padding:1.5em 1.8em;
+   
+}
+
+.hero-text span{
+    display: block;
+    font-size: 30px;
+    text-transform: uppercase;
+    color:#fff;
+    
+}
+
+
+/* feature section */
+
+.feauture {
+    margin: 4em 0;
+    position: relative;
+}
+
+.feauture .flex-feat{
+display: flex;
+justify-content: space-between;
+}
+
+.image-sec{
+    margin-right:1.8em;
+}
+
+
+
+/* gallary */
+
+.gallary{
+    margin: 4em 0;;
+}
+
+.gall-text{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+.gall-text h1{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.gall-text .btn{
+    padding:.8em 2.3em;
+    background-color: #fff;
+    color:black;
+    text-transform: uppercase;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+}
+
+
+.image1{
+    position: relative;
+}
+
+.caption{
+    position: absolute;
+    bottom: 40px;
+    left:30px;
+    color: #fff;
+}
+
+
+
+/* ===============footer area============== */
+
+.footer{
+    margin-top:2em;
+    background-color: #000000;
+    color: #fff;
+    padding:2.5em;
+}
+.fab{
+    margin: .4em;
+    color:#fff
+}
+.sflex{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social h1{
+    text-transform: uppercase;
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu p{
+    margin-top: .5em;
+}
+
+ul{
+    display: flex;
+}
+
+ul li a:hover{
+    border-bottom:3px solid#ad0dc9;
+}
+
+@media(min-width:650px){
+   .btn-mbl{
+       display: none;
+   }
+
+    #menu-btn{
+        display: none;
+    }
+.feauture img{
+    width:100%;
+    margin-right: 10px;
+    border: 2px solid rgb(212, 112, 129);
+    clip-path: polygon(0% 0%, 100% 0, 100% 30%, 94% 30%, 78% 30%, 79% 100%, 0 99%);
+    
+
+}
+
+.feature-text{
+    /* background-color: blue; */
+    position: absolute;
+    bottom: 30px;
+    left:60%;
+    padding: 2em;
+    line-height: 1.4;
+}
+
+.feature-text h2{
+    text-transform: uppercase;
+    margin-bottom: .5em;
+}
+  
+}
+
+
+/* mobile version menu */
+
+
+@media(max-width:700px){
+.flex{
+    flex-direction: column;
+}
+nav ul{
+    flex-direction: column;
+}
+
+#side-nav{
+    width:250px;
+    height: 100%;
+     position: fixed; 
+    /* background:#009688; */
+    top:30px;
+    right:-250px;
+    /* right:-250px;   initial it would be hidden */
+   
+    transition: 0.5s;
+} 
+
+#menu-btn{
+    width:50px;
+    height: 50px;
+    /* background:#fff; */
+    position: fixed;
+    text-align: center;
+    right: 60px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menu-btn img{
+    width: 30px;
+    margin-top:15px;
+}
+
+nav ul li a{
+    font-size: 1.3rem;
+}
+
+.hero-text{
+    width:70%;
+    left:100px;
+}
+
+.flex-feat{
+
+    flex-direction: column;
+}
+.image-sec {
+    width:100%;
+}
+.image-sec img{
+    clip-path: none;
+    width:100%;
+    margin-right:0;
+}
+.feature-text{
+    text-align: center;
+    width:100%;
+}
+
+.feature-text p{
+    text-align: center;
+    width:100%;
+    line-height: 1.2;
+    display: block;
+    padding:0 4em;
+    margin-top: .1em;
+   text-align: justify;
+}
+
+.feature-text h2{
+   font-size: 2.5rem;
+   width: 100%;
+   letter-spacing: .4rem;
+   
+   
+}
+.gallary{
+    position: relative;
+}
+.gall-text{
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.btn{
+    display: none;
+    
+
+}
+.btn-mbl{
+    padding:1em 2em;
+    color:rgb(0, 0, 0);
+    background-color: #fff;
+    margin-left:35%;
+    text-transform: uppercase;
+    
+}
+
+
+
+ .grid{
+    display: flex;
+    flex-direction: column;
+    padding: .5em .4em;
+    
+}
+
+.image1{
+    width:100%;
+    flex:100%;
+}
+
+.image1 img{
+    width:100%;
+    height: 200px;
+}
+
+.sflex{
+    flex-direction: column;
+}
+
+.footer-menu{
+    flex-direction: column;
+}
+.footer-menu ul{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer-menu ul li{
+padding:.6em;
+}
+
+.footer-menu p{
+    text-align: center;
+}
+}
